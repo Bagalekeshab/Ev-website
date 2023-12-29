@@ -1,14 +1,34 @@
+'use client'
+import Carousel from "./Carousel"
 
-const Front = () => {
-  return (
-    <div>
-     
-      <img className='w-full h-auto fixed' src="BYD.jpeg" alt="" />
 
+
+const sliders = [
   
-      
-    </div>
+  "Images/bmw-04.jpg",
+  "Images/byd-03.jpg",
+  "Images/kia-02.jpg",
+  "IMages/tesla_mode_s.jpg",
+  "Images/toyota-01.jpg",
+  
+]
+
+  const Front: React.FC = () =>{
+  return (
+    <main className="App">
+      <div>
+        <Carousel>
+
+          {sliders.map((Images, index) =>(
+            <div key={index}><img src={Images} />
+            </div>
+
+          ))}
+        </Carousel>
+
+      </div>
+
+    </main>
   )
 }
-
-export default Front
+export default Front;

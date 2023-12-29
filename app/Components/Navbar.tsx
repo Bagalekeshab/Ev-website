@@ -4,6 +4,8 @@ import Image from 'next/image'
 import icon8 from '@/public/menu.svg'
 import close from '@/public/close.svg'
 import { useState } from 'react';
+import Front from './Front'
+
 
 
 
@@ -31,7 +33,7 @@ const Navbar = () => {
         <div className='flex'>
         <div className='text-white hidden  md:block md:order-1'>
           <ul className= "flex md:flex-row  md:space-x-5 font-medium text-xl cursor-pointer text-white " >
-          <li className='hover:scale-105  hover:text-blue-100'> <Link href={''} > Fronnt</Link></li>
+            
             <li className='hover:scale-105  hover:text-blue-100'> <Link href={''}>Top6</Link></li>
             <li className='hover:scale-105  hover:text-blue-100'> <Link href={''}>Search</Link></li>
             <li className='hover:scale-105  hover:text-blue-100'> <Link href={''}>Service</Link></li>
@@ -55,7 +57,7 @@ const Navbar = () => {
        {isMenuOpen && (
         <div className="div bg-black h-screen md:hidden block mt-5 ">
           <ul className="div px-2 text-white  text-center space-y-6 pt-20 text-xl">
-          <li className='hover:scale-105  hover:text-blue-100'> <Link href='/Front' > Fronnt</Link></li>
+
             <li className='hover:scale-105  hover:text-blue-100'> <Link href={''}>Top6</Link></li>
             <li className='hover:scale-105  hover:text-blue-100'> <Link href={''}>Search</Link></li>
             <li className='hover:scale-105  hover:text-blue-100'> <Link href={''}>Service</Link></li>
@@ -64,6 +66,8 @@ const Navbar = () => {
         </div>
        )}
     </div>
+   
+    
     
    </> 
   )

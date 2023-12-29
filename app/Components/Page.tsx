@@ -1,6 +1,11 @@
-import React from 'react'
-import Navbar from './Navbar'
+
+import Footer from './Footer'
 import Front from './Front'
+import Navbar from './Navbar'
+import Search from './Search'
+
+
+
 
 
 export default function Page() {
@@ -8,8 +13,9 @@ export default function Page() {
     <div>
         <Navbar/>
         <Front/>
+        <Search/>
+        <Footer/>z
         
-
       
     </div>
   )
