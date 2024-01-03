@@ -1,4 +1,8 @@
-import Page from "./Components/Page"
+
+import Front from "./slider/Front";
+
+import Search from "./search/Search";
+
 
 
 
@@ -7,7 +11,14 @@ export default function Home( ) {
 
     
   <main>
-    <Page/>
+   
+   
+    <Front/>
+    <Search/>
+   
+    
+      
+   
     
     
   </main>
