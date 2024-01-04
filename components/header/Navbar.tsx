@@ -1,9 +1,10 @@
 'use client'
 import Link from 'next/link'
 import Image from 'next/image'
-import icon8 from '@/public/menu.svg'
-import close from '@/public/close.svg'
 import { useState } from 'react';
+import { CiMenuFries } from "react-icons/ci";
+import { IoMdClose } from "react-icons/io";
+
 
 
 
@@ -40,8 +41,8 @@ const Navbar = () => {
           
 
         </div>
-        <div className="menu-icon h-10 md:hidden block" onClick={toggleMenu}>
-          {isMenuOpen?<Image src={close} alt='close-icon' className='h-[30px]'/> : <Image src={icon8} alt='menu-icon' className='h-[30px]'/>}
+        <div className="menu-icon md:hidden block text-white text-2xl " onClick={toggleMenu}>
+          {isMenuOpen?<IoMdClose /> : <CiMenuFries />}
         </div>
         </div>
        
