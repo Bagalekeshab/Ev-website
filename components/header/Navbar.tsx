@@ -34,7 +34,7 @@ const Navbar = () => {
           <ul className= "flex md:flex-row  md:space-x-5 font-medium text-xl cursor-pointer text-white " >
             
             <li className='hover:scale-105  hover:text-blue-100'> <Link href='/top'>Top6</Link></li>
-            <li className='hover:scale-105  hover:text-blue-100'> <Link href={''} >Search</Link></li>
+            <li className='hover:scale-105  hover:text-blue-100'> <Link href='/tesla' >Search</Link></li>
             <li className='hover:scale-105  hover:text-blue-100'> <Link href={''}>Service</Link></li>
           </ul>
 

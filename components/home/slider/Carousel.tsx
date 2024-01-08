@@ -23,11 +23,11 @@ export const HomeCarousel = () => {
   return (
     
   
-    <div>
+    <div className=" overflow-hidden relative">
 
     <div className="flex transition-transform ease-out duration-500" style={{transform:`translateX(-${curr * 100}%)`}}>
     {SliderItems.map((item) => (
-        <div key={item.id} className="flex-shrink-0">
+        <div key={item.id} className="shrink-0 ]">
           <Image width={400} height={100} alt={item.title} src={item.imageUrl} />
         </div>
 
